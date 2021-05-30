@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>流浪動物現況</title>
+</head>
+
+<body>
+    <div id="animal" class="section">
+        <header>
+            <img src="./logo.png">
+            <p>浪愛回來</p>
+        </header>
+        <div class="animal_container section_content">
+            <h1>流浪動物現況</h1>
+            <div class="animal_leftcontainer">
+                <ul>
+                    <li>
+                        流浪犬貓數量過多，收容所不足 根據民國107年的統計數據，平均一年全台就有3萬9626隻流浪狗被抓到收容所，而且還有14萬6773隻流浪狗在路上流浪，問題十分嚴峻。 根據農委會109年9月資料，全台21間收容所近半數收容比例已達到或超過100%。哪怕資源最充足的台北市動保處收容所，犬隻超收226%，貓更超收598%。當動物數量過多，所內空間無法充足分配，動物的壓力升高，甚至會有狗咬狗相互攻擊。
+                    </li>
+                    <li>
+                        零撲殺政策配套不足，難以執行 2014年紀錄片《十二夜》上映後引起輿論與修法倡議，政府遂於隔年刪除流浪動物進入收容所12天後，無人認領即安樂死的條款。然而，在街頭浪犬數量尚未受到控制時，零撲殺政策更加緊縮了有限的動保資源，收容所犬隻只進不出，街頭遭人投訴後捕捉的問題犬，需急難救助的浪犬貓，也難以收容。
+                    </li>
+                    <li>
+                        民眾棄養與放養，產生社會問題 犬貓千年以來被馴化為人類家庭的陪伴者，野外早已不是牠們的家，且處處充滿危機。像是隨時可能走失回不了家、發生車禍意外、或感染疾病與誤食毒餌，甚至與野外犬貓交配意外懷孕等。 棄養與放養不僅違反動保法，若犬隻追咬他人、造成傷亡或車禍，飼主也都得負起刑責！
+                    </li>
+                </ul>
+            </div>
+            <div class="animal_rightcontainer">
+                <div class="right_list">
+                    <img src="animal_1.png" />
+                    <p>收容所超載，犬隻只進不出</p>
+                </div>
+                <div class="right_list">
+                    <img src="animal_2.png" />
+                    <p>群聚環境污染，造成糞便與食物殘留</p>
+                </div>
+                <div class="right_list">
+                    <img src="animal_3.png" />
+                    <p>虐殺宰殺不斷上演，浪浪生活在危險之中</p>
+                </div>
+            </div>
+            <button onclick="window.scroll(0, 0);">回首頁</button>
+        </div>
+    </div>
+
+</body>
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    body {
+        width: auto;
+        margin: 0 15px;
+        background-color: #e8fff6;
+    }
+    
+    #animal {
+        background-color: #fff1cb;
+    }
+    
+    .section {
+        margin: 5px 0;
+        width: 100%;
+        border: 2px solid black;
+    }
+    
+    .section>header {
+        background-color: #e8fff6;
+        border-bottom: 2px solid black;
+        display: flex;
+        font-size: 30px;
+        align-items: center;
+        height: 40px;
+    }
+    
+    header>img {
+        height: 50px;
+        margin: 5px;
+    }
+    
+    button {
+        grid-area: button;
+        width: 100px;
+        height: 50px;
+        font-size: 20px;
+        cursor: pointer;
+        padding: 5px;
+        margin: 20px auto 0 auto;
+    }
+    
+    .animal_container {
+        display: grid;
+        margin: 63px 60px;
+        grid-template: "title title"auto "left  right"auto "button button"/auto auto;
+    }
+    
+    .section_content>h1 {
+        grid-area: title;
+        font-size: 25px;
+        margin: 0 0 20px 0;
+        font-weight: bold;
+    }
+    
+    .animal_container li {
+        margin: 20px 0;
+    }
+    
+    .animal_leftcontainer {
+        grid-area: left;
+        background-color: #e8fff6;
+        padding: 50px;
+        border: 2px solid black;
+    }
+    
+    .animal_rightcontainer {
+        grid-area: right;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .right_list {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    .right_list>img {
+        width: 200px;
+        height: auto;
+        margin: 10px;
+    }
+</style>
+<script></script>
+
+</html>
